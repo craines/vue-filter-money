@@ -5,7 +5,7 @@ export const moneyToBR = Vue.filter('real', (value) => {
     return `R$ ${price}`;
 });
 
-numberFormat = (number, decimals, dec_point, thousands_sep) => {
+function numberFormat (number, decimals, dec_point, thousands_sep) {
     const n = !isFinite(+number) ? 0 : +number,
         prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
         sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,

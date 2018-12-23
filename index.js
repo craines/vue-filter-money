@@ -1,1 +1,1 @@
-export { moneyToBR } from './money';
+export {moneyToBR} from './money';
