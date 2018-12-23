@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 export const moneyToBR = Vue.filter('real', (value) => {
-    const price = numberFormat(value,2,',','.');
+    const price = numberFormat(parseFloat(value),2,',','.');
     return `R$ ${price}`;
 });
 
